@@ -21,7 +21,7 @@ int main()
     }
 
     // Open input image with leptonica library
-    Pix *image = pixRead("/usr/src/tesseract/testing/phototest.tif");
+    Pix *image = pixRead("a.png");
     api->SetImage(image);
     // Get OCR result
     outText = api->GetUTF8Text();
